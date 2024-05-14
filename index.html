@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система звітності</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Система звітності</h1>
+        <form id="reportForm">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="report">Звіт:</label><br>
+            <textarea id="report" name="report" rows="4" cols="50"></textarea><br>
+            <button type="button" id="submitBtn">Надіслати</button>
+            <div id="historyContainer" style="display: none;">
+                <div id="historyContent"></div>
+                <button type="button" id="closeHistoryBtn">Закрити</button>
+            </div>
+            <div id="recentEntriesContainer">
+                <h2>Останній запис:</h2>
+                <div id="recentEntryContent"></div>
+            </div>
+        </form>
+        <div id="reportContainer">
+        
+        </div>
+        <button id="darkModeBtn">Змінити тему</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

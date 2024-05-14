@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+#container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Added transition for background-color and color */
+    animation: rainbow 5s infinite;
+    /* Added rainbow animation */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Added box-shadow transition */
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: rainbow 5s infinite;
+    /* Added rainbow animation */
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#reportContainer {
+    margin-top: 20px;
+}
+
+.reportItem {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#darkModeBtn {
+    margin-top: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #container {
+    background-color: #444;
+}
+
+.dark-mode label,
+.dark-mode input,
+.dark-mode textarea {
+    color: #fff;
+    border-color: #666;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode button:hover {
+    background-color: #777;
+}
+
+/* Rainbow animation */
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    14% {
+        background-color: orange;
+    }
+
+    28% {
+        background-color: yellow;
+    }
+
+    42% {
+        background-color: green;
+    }
+
+    57% {
+        background-color: blue;
+    }
+
+    71% {
+        background-color: indigo;
+    }
+
+    85% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
